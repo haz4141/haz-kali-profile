@@ -45,77 +45,77 @@ export class Metasploit extends Component {
         return (
             <React.Fragment key={id}>
                 <div className="flex w-full h-5">
-                    <div className=" text-ubt-blue">┌──(ali㉿kali)-[{this.current_directory}] </div>                                                        
-                     </div>
-                    <div className="flex">
-                    <div className=" text-ubt-blue">└─$ </div> 
-                    <div className="p-1"> <pre>                                              
-        '                ########                  #     <br/>
-        '            #################            #       <br/>
-        '          ######################        #         <br/>
-        '        #########################      #           <br/>
-        '       ############################                <br/>
-        '      ##############################               <br/>
-        '      ###############################              <br/>
-        '     ###############################               <br/>
-        '     ##############################                <br/>
-        '                     #    ########   #             <br/>
-        '        ##        ###        ####   ##             <br/>
-        '                             ###   ###             <br/>
-        '                           ####   ###              <br/>
-        '      ####          ##########   ####              <br/>
-        '      #######################   ####               <br/>
-        '        ####################   ####                <br/>
-        '         ##################  ####                  <br/>
-        '           ############      ##                    <br/>
-        '              ########        ###                  <br/>
-        '             #########        #####                <br/>
-        '           ############      ######                <br/>
-        '          ########      #########                  <br/>
-        '            #####       ########                   <br/>
-        '              ###       #########                  <br/>
-        '             ######    ############                <br/>
-        '            #######################                <br/>
-        '            #   #   ###  #   #   ##                <br/>
-        '            ########################               <br/>
-        '             ##     ##   ##     ##                 <br/>
-        '                   https://metasploit.com          <br/>
-                                                            <br/>
-                                                            <br/>
-       =[ metasploit v6.1.31-dev                          ] <br/>
-+ -- --=[ 2201 exploits - 1166 auxiliary - 395 post       ] <br/>
-+ -- --=[ 596 payloads - 45 encoders - 11 nops            ] <br/>
-+ -- --=[ 9 evasion                                       ] <br/>
-<br/>
-Metasploit tip: When in a module, use back to go            <br/>
-back to the top level prompt                                <br/>
-<br/>
-msf6  </pre> </div>
+                    <div className=" text-ubt-blue">┌──(haz㉿kali)-[{this.current_directory}] </div>
+                </div>
+                <div className="flex">
+                    <div className=" text-ubt-blue">└─$ </div>
+                    <div className="p-1"> <pre>
+                        '                ########                  #     <br />
+                        '            #################            #       <br />
+                        '          ######################        #         <br />
+                        '        #########################      #           <br />
+                        '       ############################                <br />
+                        '      ##############################               <br />
+                        '      ###############################              <br />
+                        '     ###############################               <br />
+                        '     ##############################                <br />
+                        '                     #    ########   #             <br />
+                        '        ##        ###        ####   ##             <br />
+                        '                             ###   ###             <br />
+                        '                           ####   ###              <br />
+                        '      ####          ##########   ####              <br />
+                        '      #######################   ####               <br />
+                        '        ####################   ####                <br />
+                        '         ##################  ####                  <br />
+                        '           ############      ##                    <br />
+                        '              ########        ###                  <br />
+                        '             #########        #####                <br />
+                        '           ############      ######                <br />
+                        '          ########      #########                  <br />
+                        '            #####       ########                   <br />
+                        '              ###       #########                  <br />
+                        '             ######    ############                <br />
+                        '            #######################                <br />
+                        '            #   #   ###  #   #   ##                <br />
+                        '            ########################               <br />
+                        '             ##     ##   ##     ##                 <br />
+                        '                   https://metasploit.com          <br />
+                        <br />
+                        <br />
+                        =[ metasploit v6.1.31-dev                          ] <br />
+                        + -- --=[ 2201 exploits - 1166 auxiliary - 395 post       ] <br />
+                        + -- --=[ 596 payloads - 45 encoders - 11 nops            ] <br />
+                        + -- --=[ 9 evasion                                       ] <br />
+                        <br />
+                        Metasploit tip: When in a module, use back to go            <br />
+                        back to the top level prompt                                <br />
+                        <br />
+                        msf6  </pre> </div>
 
-                    </div>
-               
+                </div>
+
             </React.Fragment>
         );
-        }
+    }
 
     startCursor = (id) => {
-        clearInterval(this.cursor);        
-        }
-        render() {
-            return (
-                <div className="h-full w-full bg-ub-grey-500 text-white text-sm font-bold" id="terminal-body">
-                    {
-                        this.state.terminal
-                    }
-                </div>
-            )
-        }
-    
+        clearInterval(this.cursor);
+    }
+    render() {
+        return (
+            <div className="h-full w-full bg-ub-grey-500 text-white text-sm font-bold" id="terminal-body">
+                {
+                    this.state.terminal
+                }
+            </div>
+        )
+    }
+
 
 
 }
 export default Metasploit
 
-export const displayMetasploit = () => { 
+export const displayMetasploit = () => {
     return <Metasploit> </Metasploit>;
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 import Typewriter from 'typewriter-effect';
 
-export class AboutAli extends Component {
+export class AboutHaz extends Component {
 
     constructor() {
         super();
@@ -55,23 +55,23 @@ export class AboutAli extends Component {
         return (
             <>
                 <div id="about" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "about" ? " bg-ub-blue bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="about ali" src="./themes/Flat-Remix-Blue-Dark/status/about.svg" />
+                    <img className=" w-3 md:w-4" alt="about haz" src="./themes/Flat-Remix-Blue-Dark/status/about.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">About Me</span>
                 </div>
                 <div id="education" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "education" ? " bg-ub-blue bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="ali' education" src="./themes/Flat-Remix-Blue-Dark/status/education.svg" />
+                    <img className=" w-3 md:w-4" alt="haz' education" src="./themes/Flat-Remix-Blue-Dark/status/education.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Education</span>
                 </div>
                 <div id="skills" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "skills" ? " bg-ub-blue bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="ali' skills" src="./themes/Flat-Remix-Blue-Dark/status/skills.svg" />
+                    <img className=" w-3 md:w-4" alt="haz' skills" src="./themes/Flat-Remix-Blue-Dark/status/skills.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Skills</span>
                 </div>
                 <div id="projects" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "projects" ? " bg-ub-blue bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="ali' projects" src="./themes/Flat-Remix-Blue-Dark/status/projects.svg" />
+                    <img className=" w-3 md:w-4" alt="haz' projects" src="./themes/Flat-Remix-Blue-Dark/status/projects.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Projects</span>
                 </div>
                 <div id="resume" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "resume" ? " bg-ub-blue bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="ali's resume" src="./themes/Flat-Remix-Blue-Dark/status/download.svg" />
+                    <img className=" w-3 md:w-4" alt="haz's resume" src="./themes/Flat-Remix-Blue-Dark/status/download.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Resume</span>
                 </div>
             </>
@@ -100,10 +100,10 @@ export class AboutAli extends Component {
     }
 }
 
-export default AboutAli;
+export default AboutHaz;
 
-export const displayAboutAli = () => {
-    return <AboutAli />;
+export const displayAboutHaz = () => {
+    return <AboutHaz />;
 }
 
 
@@ -111,33 +111,35 @@ function About() {
     return (
         <>
             <div className="w-20 md:w-28 my-4 rounded-full">
-                <img className="w-full" src="./images/logos/pic-2.png"/>
+                <img className="w-full" src="./images/logos/pic-2.png" />
             </div>
             <div className=" mt-4 md:mt-8 text-lg md:text-2xl text-center px-1">
-                <div>my name is <span className="font-bold">Ali Abo Alshamlat</span> ,</div>
+                <div>my name is <span className="font-bold">Mohd Hazami bin Hasnah</span> ,</div>
                 <div className="font-normal ml-1">I'm a <span className="text-pink-600 font-bold">
-                <Typewriter options={{
-                    autoStart:true,
-                    loop:true,
-                    strings: [
-                        "Web Developer!",
-                        "Sys Admin!"
-                        
-                    ],
-                }
+                    <Typewriter options={{
+                        autoStart: true,
+                        loop: true,
+                        strings: [
+                            "Full-stack Developer!",
+                            "CEO & Entrepreneur!",
+                            "Tech Innovator!",
+                            "Community Leader!",
+                            "Mentor!"
+                        ],
+                    }
 
-                }/>
-                 </span></div>
+                    } />
+                </span></div>
             </div>
             <div className=" my-4 relative md:my-8 pt-px bg-white w-32 md:w-48">
                 <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-0"></div>
                 <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-0"></div>
             </div>
             <ul className=" leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list">
-                <li className=" list-pc">I'm <span className=" font-medium">Network Engineering</span></li>
-                <li className=" mt-3 list-building"> I enjoy building awesome softwares that solve practical problems.</li>
-                <li className=" mt-3 list-time"> When I am not coding my next project, I like to spend my time reading books. </li>
-                <li className=" mt-3 list-star"> And I also have interest in Deep Learning & Computer Vision!</li>
+                <li className=" list-pc">I'm a <span className=" font-medium">Computer Science student</span> at University of Technology Sarawak (UTS)</li>
+                <li className=" mt-3 list-building"> I specialize in building Islamic tech, web applications, and AI solutions that serve real-world needs.</li>
+                <li className=" mt-3 list-time"> When I'm not coding, I serve as an Imam & bilal, lead youth initiatives as Ketua Belia Nyabor, and mentor aspiring entrepreneurs. </li>
+                <li className=" mt-3 list-star"> CEO of HazTech Digital & HazTech Legacy Construction - bridging faith, technology, and innovation!</li>
             </ul>
         </>
     )
@@ -146,7 +148,7 @@ function Education() {
     return (
         <>
             <div className="flex items-center font-medium relative text-2xl mt-2 md:mt-4 mb-4">
-                Education <img className="w-16 inline" src="./images/logos/pic-3.png"/>
+                Education <img className="w-16 inline" src="./images/logos/pic-3.png" />
                 <div className="absolute pt-px bg-white mt-px top-full w-full">
                     <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-full"></div>
                     <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-full"></div>
@@ -155,15 +157,20 @@ function Education() {
             <ul className=" w-10/12  mt-4 ml-4 px-0 md:px-1">
                 <li className="list-disc">
                     <div className=" text-lg md:text-xl text-left font-bold leading-tight">
-                    Computer Systems and Networks Engineering Student in Tishreen University, Syria .
+                        Bachelor's in Computer Science - University of Technology Sarawak (UTS)
                     </div>
-                    <div className=" text-sm text-gray-400 mt-0.5">2016 - 2021</div>
-                    <div className=" text-sm md:text-base">Computer Science & Engineering</div>
-                    <div className="text-sm text-gray-300 font-bold mt-1">Network Engineering</div>
+                    <div className=" text-sm text-gray-400 mt-0.5">2021 - Present</div>
+                    <div className=" text-sm md:text-base">Computer Science & Technology</div>
+                    <div className="text-sm text-gray-300 font-bold mt-1">Sibu, Sarawak, Malaysia</div>
                 </li>
-                <li className="list-disc mt-5">  
-                    <div className=" text-sm text-gray-400 mt-0.5">2016 - 2022</div>
-                    <div className=" text-sm md:text-base">SysAdmin, Soc Analyst, Front End</div>
+                <li className="list-disc mt-5">
+                    <div className=" text-lg md:text-xl text-left font-bold leading-tight">
+                        Professional Experience
+                    </div>
+                    <div className=" text-sm text-gray-400 mt-0.5">2020 - Present</div>
+                    <div className=" text-sm md:text-base">CEO & Founder - HazTech Digital & HazTech Legacy Construction</div>
+                    <div className=" text-sm md:text-base mt-1">Full-stack Development, AI Solutions, Islamic Tech</div>
+                    <div className=" text-sm md:text-base mt-1">Community Leadership, Mentoring & Financial Advisory</div>
                 </li>
             </ul>
         </>
@@ -181,10 +188,10 @@ function Skills() {
             </div>
             <ul className=" tracking-tight text-sm md:text-base w-10/12 emoji-list">
                 <li className=" list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-                    I've worked with a wide variety of programming languages & frameworks.
+                    I've built 40+ projects spanning Islamic tech, business platforms, games, and productivity tools.
                 </li>
                 <li className=" list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-                    <div> My areas of expertise are <strong className="text-ubt-gedit-orange">front-end development, React.js & javascript!</strong></div>
+                    <div> My areas of expertise are <strong className="text-ubt-gedit-orange">full-stack development, React.js, Next.js, Node.js & AI integrations!</strong></div>
                 </li>
                 <li className=" list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
                     <div>Here are my most frequently used</div>
@@ -197,29 +204,29 @@ function Skills() {
             <div className="w-full md:w-10/12 flex justify-center items-start font-bold text-center">
                 <div className="px-2 w-1/2">
                     <div className="flex flex-wrap justify-center items-start w-full mt-2">
-                        <img className="m-1" src="https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A" alt="ali javascript" />
-                        <img className="m-1" src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white" alt="ali c++" />
-                        <img className="m-1" src="http://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=ffffff" alt="ali python" />
-                        <img className="m-1" src="https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white" alt="ali dart" />
-                        <a href="https://www.google.com/search?q=is+html+a+language%3F" target="_blank" rel="noreferrer"><img title="yes it's a language!" className="m-1" src="https://img.shields.io/badge/-HTML5-%23E44D27?style=flat&logo=html5&logoColor=ffffff" alt="ali HTML" /></a>
-                        <img src="https://img.shields.io/badge/-Git-%23F05032?style=flat&logo=git&logoColor=%23ffffff" alt="ali git" className="m-1" />
-                        <img src="https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=ffffff" alt="ali firebase" className="m-1" />
+                        <img className="m-1" src="https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A" alt="hazami javascript" />
+                        <img className="m-1" src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=ffffff" alt="hazami typescript" />
+                        <img className="m-1" src="http://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=ffffff" alt="hazami python" />
+                        <a href="https://www.google.com/search?q=is+html+a+language%3F" target="_blank" rel="noreferrer"><img title="yes it's a language!" className="m-1" src="https://img.shields.io/badge/-HTML5-%23E44D27?style=flat&logo=html5&logoColor=ffffff" alt="hazami HTML" /></a>
+                        <img className="m-1" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=ffffff" alt="hazami css" />
+                        <img src="https://img.shields.io/badge/-Git-%23F05032?style=flat&logo=git&logoColor=%23ffffff" alt="hazami git" className="m-1" />
+                        <img src="https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=ffffff" alt="hazami firebase" className="m-1" />
                     </div>
                 </div>
                 <div className="px-2 flex flex-wrap items-start w-1/2">
                     <div className="flex flex-wrap justify-center items-start w-full mt-2">
-                        <img className=" m-1" src="https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=ffffff" alt="ali next" />
-                        <img className=" m-1" src="https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=ffffff" alt="ali react" />
-                        <img className="m-1" src="https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white" alt="ali flutter" />
-                        <img className="m-1" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" alt="ali tailwind css" />
-                        <img src="https://img.shields.io/badge/-Nodejs-339933?style=flat&logo=Node.js&logoColor=ffffff" alt="ali node.js" className="m-1" />
-                        <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white" alt="ali jquery" className="m-1" />
+                        <img className=" m-1" src="https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=ffffff" alt="hazami next" />
+                        <img className=" m-1" src="https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=ffffff" alt="hazami react" />
+                        <img src="https://img.shields.io/badge/-Nodejs-339933?style=flat&logo=Node.js&logoColor=ffffff" alt="hazami node.js" className="m-1" />
+                        <img className="m-1" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" alt="hazami tailwind css" />
+                        <img className="m-1" src="https://img.shields.io/badge/-Electron-47848F?style=flat&logo=electron&logoColor=white" alt="hazami electron" />
+                        <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white" alt="hazami vite" className="m-1" />
                     </div>
                 </div>
             </div>
             <ul className=" tracking-tight text-sm md:text-base w-10/12 emoji-list mt-4">
                 <li className=" list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-                    <span> And of course,</span> <img className=" inline ml-1" src="http://img.shields.io/badge/-Linux-0078D6?style=plastic&logo=linux&logoColor=ffffff" alt="ali linux" /> <span>!</span>
+                    <span>Specializing in Islamic tech, business automation, and AI-powered solutions!</span>
                 </li>
             </ul>
         </>
@@ -229,61 +236,76 @@ function Skills() {
 function Projects() {
     const project_list = [
         {
-            name: "Protecting Servers from Digital Attacks using IDPS",
-            date: "Feb 2022",
+            name: "Hidayah AI - Islamic Companion App",
+            date: "2025",
+            link: "https://hidayah-ai.vercel.app/",
             description: [
-                "A present the attacks that the network can be exposed to. Clarify the types of detection and prevention systems, mechanism and classification.",
+                "Comprehensive Islamic app with Qur'an reader, Hadith insights, AI chatbot, and recitation feedback with tajweed correction.",
             ],
-            domains: ["Snort", "Ubuntu"]
+            domains: ["Next.js", "AI", "Firebase"]
         },
         {
-            name: "Building A Web Server And Load Balancer Using C",
-            date: "Jan 2021",
+            name: "HazTech Digital - Technology Solutions Platform",
+            date: "2024",
+            link: "https://haztech.vercel.app/",
             description: [
-                "Building A Two Web Server And Load Balancer Using C",
+                "Professional platform offering computer networking, repairs, web development, and cybersecurity services.",
             ],
-            domains: ["C"]
+            domains: ["React", "Tailwind CSS", "Business"]
         },
         {
-            name: "Learn Management System",
-            date: "Jan 2021",
+            name: "Waktu Solat Malaysia - Prayer Times App",
+            date: "2025",
+            link: "https://waktu-solat-ten.vercel.app/",
             description: [
-                "LMS-Laravel is a Learning Management System (or LMS) that facilitates the creation of educational content by allowing you to manage courses and learning modules.",
+                "Modern interactive prayer times with circular clock, streak tracker gamification, smart notifications, and qibla compass.",
             ],
-            domains: ["Laravel"]
+            domains: ["React", "JAKIM API", "PWA"]
         },
         {
-            name: "Managing and monitoring the computer network using the zappix system",
-            date: "Nov 2019",
+            name: "VidSnatch - Universal Video Downloader",
+            date: "2026",
+            link: "https://vidsnatch.vercel.app/",
             description: [
-                "Developed Web Application to predict and diagnose diseases from x-ray images.",
+                "Universal video downloader supporting TikTok, Instagram, YouTube, Twitter, Facebook, and Pinterest with HD quality.",
             ],
-            domains: ["ubuntu server"]
+            domains: ["React", "API Integration", "Tools"]
         },
         {
-            name: "Quiz App",
-            date: "Dec 2018",
+            name: "SearchQuick - Windows File Search Utility",
+            date: "2026",
+            link: "https://github.com/haz4141/searchquick",
             description: [
-                "Developed Web Applications to Quiz App Students",
+                "Ultra-fast file search utility for Windows with real-time results, smart filtering, and modern dark UI.",
             ],
-            domains: ["javascript"]
+            domains: ["Electron", "Node.js", "Desktop"]
+        },
+        {
+            name: "WhatsBig - Disk Space Analyzer",
+            date: "2026",
+            link: "https://github.com/haz4141/WhatsBig",
+            description: [
+                "Lightning-fast disk space analyzer for Windows to find largest files, filter by type & size, and clean up storage.",
+            ],
+            domains: ["Electron", "Node.js", "Desktop"]
         }
     ];
 
     const tag_colors = {
         "javascript": "blue-400",
-        "firebase": "red-600",
-        "Laravel": "red-500",
-        "chrome-extension": "yellow-400",
-        "flutter": "blue-500",
-        "dart": "blue-500",
-        "react-native": "purple-500",
-        "html5": "pink-600",
-        "C": "pink-400",
-        "Snort": "yellow-400",
-        "django": "green-200",
-        "Ubuntu": "orange-500",
-        "ubuntu server":"orange-300"
+        "React": "blue-500",
+        "Next.js": "gray-300",
+        "AI": "purple-500",
+        "Firebase": "red-600",
+        "Tailwind CSS": "cyan-400",
+        "Business": "green-400",
+        "JAKIM API": "orange-400",
+        "PWA": "pink-500",
+        "API Integration": "yellow-400",
+        "Tools": "blue-300",
+        "Electron": "teal-400",
+        "Node.js": "green-500",
+        "Desktop": "gray-400"
     }
 
     return (
@@ -332,6 +354,6 @@ function Projects() {
 }
 function Resume() {
     return (
-        <iframe className="h-full w-full" src="./files/Ali-Abo-Alshamlat-Network-Engineer.pdf" title="ali resume" frameBorder="0"></iframe>
+        <iframe className="h-full w-full" src="./files/Mohd-Hazami-Resume.pdf" title="hazami resume" frameBorder="0"></iframe>
     )
 }

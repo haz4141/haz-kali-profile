@@ -7,7 +7,7 @@ import { displayFirefox } from './components/apps/firefox';
 import { displayChrome } from './components/apps/chrome';
 import { displayTrash } from './components/apps/trash';
 import { displayGedit } from './components/apps/gedit';
-import { displayAboutAli } from './components/apps/ali';
+import { displayAboutHaz } from './components/apps/haz';
 import { displayTerminalCalc } from './components/apps/calc';
 import { displayMetasploit } from './components/apps/metasploit';
 import { displayNmap } from './components/apps/nmap';
@@ -37,13 +37,13 @@ const apps = [
         screen: displayTerminal,
     },
     {
-        id: "about-ali",
-        title: "About Ali",
+        id: "about-hazami",
+        title: "About Hazami",
         icon: './themes/Flat-Remix-Blue-Dark/system/user-home.svg',
         disabled: false,
         favourite: true,
         desktop_shortcut: true,
-        screen: displayAboutAli,
+        screen: displayAboutHaz,
     },
     {
         id: "firefox",
