@@ -2,7 +2,7 @@
   "name": "hazami-portfolio",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://haz4141.github.io",
+  "homepage": "https://haz4141.github.io/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
