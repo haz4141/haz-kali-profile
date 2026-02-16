@@ -2,23 +2,23 @@
   "name": "hazami-portfolio",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://haz4141.github.io/",
+  "homepage": "https://haz4141.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@react-pdf-viewer/core": "^3.12.0",
     "@react-pdf-viewer/default-layout": "^3.12.0",
     "axios": "^1.4.0",
     "disqus-react": "^1.1.5",
     "draft-js": "^0.11.7",
     "draftjs-to-html": "^0.9.1",
-    "@emailjs/browser": "^3.11.0",
     "expr-eval": "^2.0.2",
     "jquery": "^3.7.0",
     "next": "latest",
